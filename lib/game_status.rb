@@ -43,10 +43,10 @@ end
 def full?(board)
   fullboard = false
 
-  board.each do |spot|
-    cell1 = spot[0]
-    cell2 = spot[1]
-    cell3 = spot[2]
+  WIN_COMBINATIONS.each do |win_combination|
+    cell1 = win_combination[0]
+    cell2 = win_combination[1]
+    cell3 = win_combination[2]
 
     position1 = board[cell1]
     position2 = board[cell2]
