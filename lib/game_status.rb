@@ -81,9 +81,12 @@ def winner(board)
     position_3 = board[win_index_3]
 
     if (position_1 == "X" && position_2 == "X" && position_3 == "X")
+      return true
       puts "X"
     else (position_1 == "O" && position_2 == "O" && position_3 == "O")
+      return false
       puts "O"
     end
   end
+  
 end
