@@ -41,17 +41,6 @@ def won?(board)
 end
 
 
-def draw?(board)
-  draw = false
-  if (fullboard == true) && (win_combo == false)
-    draw = true
-  else
-    draw = false
-  end
-  return draw
-end
-
-
 def full?(board)
   fullboard = false
 
@@ -76,4 +65,14 @@ def full?(board)
     end
     return fullboard
 end
+end
+
+def draw?(board)
+  draw = false
+  if (fullboard == true) && (win_combo == false) ||
+    draw = true
+  else
+    draw = false
+  end
+  return draw
 end
