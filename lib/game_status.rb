@@ -54,9 +54,9 @@ def full?(board)
 
     board.each do i |cells|
       if cells[i] = "" || " "
-        return false
+        fullboard = false
       else
-        return true
+        fullboard = true
       end
     end
     return fullboard
