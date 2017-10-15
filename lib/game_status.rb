@@ -52,7 +52,7 @@ def full?(board)
     position2 = board[cell2]
     position3 = board[cell3]
 
-    board.each do i |cells|
+    board.each |cells|
       if cells[i] = "" || " "
         fullboard = false
       else
