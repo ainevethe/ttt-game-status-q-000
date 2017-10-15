@@ -41,6 +41,8 @@ def won?(board)
 end
 
 def full?(board)
+  fullboard = false
+
   board.each do |spot|
     cell1 = spot[0]
     cell2 = spot[1]
@@ -57,5 +59,5 @@ def full?(board)
         return true
       end
     end
-end
+    return  fullboard
 end
