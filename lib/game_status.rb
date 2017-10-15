@@ -56,7 +56,7 @@ def full?(board)
     board.each do |cells|
       if ((position1 == "" || " ") || (position2 == "" || " ") || (position3 == "" || " "))
         fullboard = false
-      elsif (draw?(board) == true)
+      elsif ((full?(board) == true) && (win_combo == false))
         fullboard = true
       else
         fullboard = true
