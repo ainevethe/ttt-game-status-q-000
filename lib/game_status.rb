@@ -59,5 +59,5 @@ def full?(board)
         return true
       end
     end
-    return  fullboard
+    return fullboard
 end
