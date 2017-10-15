@@ -42,29 +42,14 @@ end
 
 
 def full?(board)
-  fullboard = false
 
-  WIN_COMBINATIONS.each do |win_combination|
-    cell1 = win_combination[0]
-    cell2 = win_combination[1]
-    cell3 = win_combination[2]
-
-    position1 = board[cell1]
-    position2 = board[cell2]
-    position3 = board[cell3]
-
-    board.each do |cells|
-      if ((position1 == "" || " ") || (position2 == "" || " ") || (position3 == "" || " "))
-        fullboard = false
-      elsif ((full?(board) == true) && (win_combo == false))
-        fullboard = true
+    board.all? do |cells|
+      if cells == "X" || cells == "O"
+        true
       else
-        fullboard = true
+        false
       end
-
     end
-    return fullboard
-end
 end
 
 def draw?(board)
