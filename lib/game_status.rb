@@ -54,10 +54,9 @@ end
 
 def draw?(board)
   draw = false
-  if (fullboard == true) && (win_combo == false) ||
-    draw = true
+  if (full?(board) == true) && (won?(board) == false) ||
+    true
   else
-    draw = false
+    false
   end
-  return draw
 end
