@@ -53,10 +53,10 @@ def full?(board)
     position3 = board[cell3]
 
     board.each do |cells|
-      if (draw?(board) == true)
+      if ((position1 == "" || " ") || (position2 == "" || " ") || (position3 == "" || " "))
+        fullboard = false
+      elsif (draw?(board) == true)
         fullboard = true
-      elsif ((position1 == "" || " ") || (position2 == "" || " ") || (position3 == "" || " "))
-      fullboard = false
       else
         fullboard = true
       end
