@@ -40,6 +40,16 @@ def won?(board)
    return win_combo
 end
 
+
+def draw?(board)
+  if (fullboard == true) && (win_combo == false)
+    return true
+  else
+    return false
+  end
+end
+
+
 def full?(board)
   fullboard = false
 
@@ -66,10 +76,4 @@ def full?(board)
 end
 end
 
-def draw?(board)
-  if (fullboard == true) && (win_combo == false)
-    return true
-  else
-    return false
-  end
-end
+
