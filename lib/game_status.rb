@@ -75,5 +75,3 @@ def full?(board)
     return fullboard
 end
 end
-
-
