@@ -62,3 +62,11 @@ def full?(board)
     return fullboard
 end
 end
+
+def draw(board)
+  if (fullboard = true) && (win_combo = false)
+    return true
+  else
+    return false
+  end
+end
