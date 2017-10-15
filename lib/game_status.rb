@@ -42,11 +42,13 @@ end
 
 
 def draw?(board)
+  draw = false
   if (fullboard == true) && (win_combo == false)
-    return true
+    draw = true
   else
-    return false
+    draw = false
   end
+  return draw
 end
 
 
